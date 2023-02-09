@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import Product from "../components/Product";
 
+//import product context
 import { ProductContext } from "../contexts/ProductContext";
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
         <div className="container mx-auto text-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] mx-auto md:mx-0 max-w-sm md:max-w-none">
             {menAndWomenProduct.map((item) => {
-              return <Product menAndWomenProduct={item} />
+              return <Product menAndWomenProduct={item} />;
             })}
           </div>
         </div>
